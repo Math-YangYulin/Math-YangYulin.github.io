@@ -20,28 +20,32 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="The World of Math">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="定积分的定义Newton-Leibniz 公式可积条件式 习题 9.39.3.1求证：若 $T’$ 是 $T$ 增加若干个分点后所得的分割，则 $\sum\limits_{T’} \omega_{i}’\Delta x_{i}’ \leq \sum\limits_{T} \omega_{i}\Delta x_{i}$ 证明： 不失一般性，这里只证明 $T’$ 是 $T$ 增加一个分点后所得的分割的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="定积分">
+<meta property="og:url" content="http://yoursite.com/2020/03/31/%E5%AE%9A%E7%A7%AF%E5%88%86/index.html">
 <meta property="og:site_name" content="The World of Math">
+<meta property="og:description" content="定积分的定义Newton-Leibniz 公式可积条件式 习题 9.39.3.1求证：若 $T’$ 是 $T$ 增加若干个分点后所得的分割，则 $\sum\limits_{T’} \omega_{i}’\Delta x_{i}’ \leq \sum\limits_{T} \omega_{i}\Delta x_{i}$ 证明： 不失一般性，这里只证明 $T’$ 是 $T$ 增加一个分点后所得的分割的">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-31T09:28:16.558Z">
+<meta property="article:modified_time" content="2020-03-31T10:30:18.147Z">
 <meta property="article:author" content="杨雨林">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/03/31/%E5%AE%9A%E7%A7%AF%E5%88%86/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>The World of Math</title>
+  <title>定积分 | The World of Math</title>
   
 
 
@@ -139,9 +143,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -157,10 +162,9 @@
       <meta itemprop="name" content="The World of Math">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/31/%E5%AE%9A%E7%A7%AF%E5%88%86/" class="post-title-link" itemprop="url">定积分</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          定积分
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -184,7 +188,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="定积分的定义"><a href="#定积分的定义" class="headerlink" title="定积分的定义"></a><strong>定积分的定义</strong></h3><h3 id="Newton-Leibniz-公式"><a href="#Newton-Leibniz-公式" class="headerlink" title="Newton-Leibniz 公式"></a><strong>Newton-Leibniz 公式</strong></h3><h3 id="可积条件"><a href="#可积条件" class="headerlink" title="可积条件"></a><strong>可积条件</strong></h3><p>式</p>
+        <h3 id="定积分的定义"><a href="#定积分的定义" class="headerlink" title="定积分的定义"></a><strong>定积分的定义</strong></h3><h3 id="Newton-Leibniz-公式"><a href="#Newton-Leibniz-公式" class="headerlink" title="Newton-Leibniz 公式"></a><strong>Newton-Leibniz 公式</strong></h3><h3 id="可积条件"><a href="#可积条件" class="headerlink" title="可积条件"></a><strong>可积条件</strong></h3><p>式</p>
 <h4 id="习题-9-3"><a href="#习题-9-3" class="headerlink" title="习题 9.3"></a>习题 9.3</h4><h5 id="9-3-1"><a href="#9-3-1" class="headerlink" title="9.3.1"></a>9.3.1</h5><p>求证：若 $T’$ 是 $T$ 增加若干个分点后所得的分割，则 $\sum\limits_{T’} \omega_{i}’\Delta x_{i}’ \leq \sum\limits_{T} \omega_{i}\Delta x_{i}$</p>
 <p>证明：</p>
 <p>不失一般性，这里只证明 $T’$ 是 $T$ 增加一个分点后所得的分割的情形.</p>
@@ -321,147 +325,30 @@ f(a_{n}^{-}) = \lim\limits_{x \to a_{n}^{-}} f(x) = \lim\limits_{x \to a_{n}^{-}
 <p>所以</p>
 <script type="math/tex; mode=display">
 \lim_{\Vert T \Vert \to 0} \sum_{i = 1}^{n} f(\xi_{i})g(\eta_{i}) \Delta x_{i} = \int_{a}^{b} f(x)g(x) \mathrm{d}x</script>
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/31/Liouville%20%E5%85%AC%E5%BC%8F/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨雨林">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="The World of Math">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/31/Liouville%20%E5%85%AC%E5%BC%8F/" class="post-title-link" itemprop="url">Liouville 公式</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-03-31 12:16:41 / 修改时间：18:30:23" itemprop="dateCreated datePublished" datetime="2020-03-31T12:16:41+08:00">2020-03-31</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>若 $y_{1}$ 是二阶齐次线性方程 $y’’ + P(x)y’ + Q(x)y = 0$ 的非零解，则</p>
-<script type="math/tex; mode=display">y_{2} = y_{1}\int \dfrac{1}{y_{1}^{2}}\mathrm{e}^{-\int P(x) \mathrm{d}x} \mathrm{d}x</script><p>是该方程与 $y_{1}$ 线性无关的解.</p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/31/Liouville%20%E5%85%AC%E5%BC%8F/" rel="prev" title="Liouville 公式">
+      <i class="fa fa-chevron-left"></i> Liouville 公式
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/31/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="杨雨林">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="The World of Math">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/03/31/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-03-31 11:33:23" itemprop="dateCreated datePublished" datetime="2020-03-31T11:33:23+08:00">2020-03-31</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -514,6 +401,7 @@ f(a_{n}^{-}) = \lim\limits_{x \to a_{n}^{-}} f(x) = \lim\limits_{x \to a_{n}^{-}
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#定积分的定义"><span class="nav-number">1.</span> <span class="nav-text">定积分的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Newton-Leibniz-公式"><span class="nav-number">2.</span> <span class="nav-text">Newton-Leibniz 公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可积条件"><span class="nav-number">3.</span> <span class="nav-text">可积条件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#习题-9-3"><span class="nav-number">3.1.</span> <span class="nav-text">习题 9.3</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#9-3-1"><span class="nav-number">3.1.1.</span> <span class="nav-text">9.3.1</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-3-2"><span class="nav-number">3.1.2.</span> <span class="nav-text">9.3.2</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-3-3"><span class="nav-number">3.1.3.</span> <span class="nav-text">9.3.3</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-3-4"><span class="nav-number">3.1.4.</span> <span class="nav-text">9.3.4</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-3-5"><span class="nav-number">3.1.5.</span> <span class="nav-text">9.3.5</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-3-6"><span class="nav-number">3.1.6.</span> <span class="nav-text">9.3.6</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-3-7"><span class="nav-number">3.1.7.</span> <span class="nav-text">9.3.7</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定积分的性质"><span class="nav-number">4.</span> <span class="nav-text">定积分的性质</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#习题9-4"><span class="nav-number">4.1.</span> <span class="nav-text">习题9.4</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#9-4-1"><span class="nav-number">4.1.1.</span> <span class="nav-text">9.4.1</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
